@@ -37,9 +37,9 @@ int main(void)
 {
 	{
 		ThreadPool pool;
-		// �����̳߳ع���ģʽ
-		// MODE_CACHED�����߳���
-		// MODE_FIXED���̶��߳���
+		// 设置线程池工作模式
+		// MODE_CACHED：变线程数
+		// MODE_FIXED：固定线程数
 		pool.setMode(PoolMode::MODE_CACHED);
 
 		pool.start(4);
